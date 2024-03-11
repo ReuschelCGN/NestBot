@@ -25,7 +25,7 @@
   "language": "en/de/es/fr/it/ru",
   "footerFormat": "HH:mm - dd DD.MM.YYYY",
   "footerOffset": 0,
-  "tileServerURL": "",
+  "tileServerURL": "http://myTileserver.com:9000",
   "tileWidth": 1000,
   "tileHeight": 600,
   "emojis": {
