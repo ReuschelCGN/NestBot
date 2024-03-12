@@ -15,7 +15,7 @@ module.exports = {
   fetchAreaNests: async function fetchAreaNests(client, areaName, config, master, shinies) {
     var areaQuery = `SELECT lat, lon, name, area_name, pokemon_id, pokemon_form, pokemon_avg FROM nests WHERE pokemon_id > 0 AND pokemon_avg >= ${config.minimumAverage} AND area_name = "${areaName}"`
     if (config.includeUnknown == false) {
-      areaQuery = areaQuery.concat(` AND name != ${config.renameUnknownFrom}`);
+      areaQuery = areaQuery.concat(` AND name != "${config.renameUnknownFrom}"`);
     }
     areaQuery = areaQuery.concat(` ORDER BY ${config.nestBoardOrder.replace('pokemon_name', 'pokemon_id').replace('nest_name', 'name')} ASC;`);
     if (config.nestBoardOrder == 'pokemon_avg') {
