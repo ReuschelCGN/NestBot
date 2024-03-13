@@ -125,7 +125,11 @@ module.exports = {
             "zoom": tileData.zoom,
             "nestjson": markers
           });
-        nestEmbed.setImage(`${config.tileServerURL}/staticmap/pregenerated/${res.text}`);
+        if (config.middleman == true) {
+          nestEmbed.setImage(`${res.text}`);
+        } else {
+          nestEmbed.setImage(`${config.tileServerURL}/staticmap/pregenerated/${res.text}`);
+        }
       } catch (err) {
         console.error(`Map error for area ${areaName}`);
         console.error(err);
