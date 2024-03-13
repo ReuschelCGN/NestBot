@@ -26,6 +26,7 @@
   "footerFormat": "HH:mm - dd DD.MM.YYYY",
   "footerOffset": 0,
   "tileServerURL": "http://myTileserver.com:9000",
+  "middleman": false,
   "tileWidth": 1000,
   "tileHeight": 600,
   "emojis": {
