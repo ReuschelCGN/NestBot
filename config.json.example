@@ -26,6 +26,7 @@
   "footerFormat": "llll",
   "footerOffset": 0,
   "tileServerURL": "",
+  "middleman": false,
   "tileWidth": 1000,
   "tileHeight": 600,
   "emojis": {
